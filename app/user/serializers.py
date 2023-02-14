@@ -40,7 +40,7 @@ class AuthTokenSerializer(serializers.Serializer):
     password = serializers.CharField(
         style={'input_type': 'password'},
         trim_whitespace=False,
-)
+    )
 
     def validate(self, attrs):
         """Validate and authenticate the user."""
